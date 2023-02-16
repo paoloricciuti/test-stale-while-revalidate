@@ -4,4 +4,4 @@
 
 <a href="/">Go back</a>
 
-Num: {data.num}
+Num: {data.list.num}
