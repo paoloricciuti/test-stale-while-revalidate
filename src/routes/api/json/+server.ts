@@ -15,7 +15,7 @@ export async function GET(event) {
 			//note learn more about cache-control
 			// 'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
 			//stale-while is not supported in safari/opera (fallback needed?)
-			'Cache-Control': 'max-age=1, stale-while-revalidate=59'
+			'Cache-Control': 's-maxage=1, stale-while-revalidate=59'
 		}
 	});
 }
