@@ -3,7 +3,10 @@ import { json, error } from '@sveltejs/kit';
 
 let num = 0;
 
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
 export async function GET(event) {
+	await wait(2000);
 	const data = {
 		num: num++
 	};
